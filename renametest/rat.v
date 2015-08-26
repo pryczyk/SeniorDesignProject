@@ -3,7 +3,6 @@ module rat (
 
 	input 								clock,
 	input 								reset,
-	input 								en,
 	
 	//
 	// INPUT FROM ID STAGE
