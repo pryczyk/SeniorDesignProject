@@ -62,7 +62,7 @@ module rat (
 	//
 	 output logic [`ARF_SIZE-1:0][`PRF_IDX-1:0]	PRF_idx		// Mapping of ARF to PRF
 );
-	logic [`ARF_SIZE-1:0][`PRF_IDX-1:0]	PRF_idx; 				// Mapping of ARF to PRF
+	//logic [`ARF_SIZE-1:0][`PRF_IDX-1:0]	PRF_idx; 				// Mapping of ARF to PRF
 	always_comb begin
 		used_1 = id_valid_inst_1;
 		used_2 = id_valid_inst_2;
