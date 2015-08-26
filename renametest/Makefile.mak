@@ -8,8 +8,8 @@ all:    simv
 # Modify starting here
 #####
 
-TESTBENCH = sys_defs.vh testbench/rename_test.v
-SIMFILES = verilog/rrat.v verilog/prf.v verilog/rat.v
+TESTBENCH = sys_defs.vh rename_test.v
+SIMFILES = rrat.v prf.v rat.v
 
 synth/rat.vg:    $(SIMFILES) synth/rat.tcl
 	cd synth && dc_shell-t -f ./rat.tcl | tee synth.out 
